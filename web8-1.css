@@ -1,0 +1,56 @@
+/* 요소에 적용하는 스타일로 이해 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap'); /* fonts.google.com에서 웹 폰트 사용 */
+
+.box {
+  border: 3px solid #000; /* 테두리 */ 
+  width: 60%; /* 너비 조절 */
+  box-shadow: 4px 4px 4px 4px #6E6E6E;
+  border-radius: 25px; /* 둥근 테두리 */
+}/*클래스 선택자*/
+
+#container { 
+  border: 3px solid #000; /* 테두리 */ 
+  width: 60%; /* 너비 조절 */
+  box-shadow: 4px 4px 4px 4px #6E6E6E;
+} /* 아이디 선택자 */
+
+#organize {
+  display: grid; /* 그리드 컨테이너 지정 */
+  grid-template-columns: repeat(3, 1fr); /* 상대적인 크기로 3개의 칼럼 배치*/
+  grid-template-rows: minmax(100px, auto);
+  grid-template-areas:
+    "text list table"
+    "multi form inputtag"
+    ". . inputtagthdtjd";
+} /* CSS 그리드 레이아웃 */
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/white-grey-cotton-fabric-texture-with-seamless-pattern_38607-835.jpg?w=1380'); /* 배경 이미지 삽입*/
+}
+
+a[href] {
+  background: ;
+} /* [속성] 선택자 */
+
+li {
+  background-color: #222;
+  color: #fff;
+  border-radius: 25px; /* 둥근 테두리 */
+  font-weight: bold; /* 굵은 글자 */
+  width: 50vw; /* 뷰포트 너비 50% */
+} /* 타입 선택자 */
+h2 {
+  padding:10px;
+  color: #000000;
+  font-size: 15pt; /* 글자 크기 조절 */
+  font-weight: bold; /* 굵은 글자 */
+} /* 타입 선택자 */
+
+* {
+  margin:10px auto; /* 중앙배치 */
+  padding: 8px;
+  text-align: center; /* 중앙 정렬 */
+  line-height: 1.1; /* 줄 간격 조정 */
+  font-size: 1.5vw; /* 뷰포트 너비의 1.5% */
+  font-family: 'IBM Plex Sans KR', sans-serif; /* 웹 폰트 사용*/
+} /* 전체 선택자 */
